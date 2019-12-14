@@ -1,0 +1,227 @@
+/*** CSS for the Enzyme Sim ***/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --footer: #585858; /* a specific grey */
+    --accent: #00ad88; /* a dark blue */
+    --canvasW: 654px;
+}
+
+body {
+	background-color: var(--footer);
+	font-family: Arial, Helvetica, sans-serif;
+}
+/********** Header **********/
+#header {
+	background-image: linear-gradient(#818181, #0a0a0a, #414141);
+    width: 100%;
+    min-width: calc(var(--canvasW) + 50px);
+	height: 60px;
+	text-align: center;
+	padding-top: 25px;
+}
+#header h1 {
+    color: #ffffff;
+}
+
+/********** Page **********/
+#pageBackground {
+	background-color: var(--accent);
+	/* background-image: url("./media/Paper.png"); */
+	/* background-repeat: repeat; */
+} 
+#page {
+	background-color: #eeeeee;
+	width: 75%;
+	max-width: 725px;
+	min-width: var(--canvasW);
+	min-height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px 25px;
+	text-align: left;
+}
+
+.row {
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+}
+
+/********** Footer **********/
+#footer{
+	background-color: var(--footer);
+	width: 100%;
+	height: 50px;
+	padding-top: 15px;
+}
+#footerText {
+	margin-left: 15px;
+	font-size: 16px;
+	color: #ffffff;
+	float: left;
+}
+#githubBtn {
+	margin-right: 15px;
+	color: #ffffff;
+	float: right;
+	font-size: 16px;
+}
+
+/********** Navigation index.html **********/
+#index button {
+	margin: 5px 0;
+	font-size: 18px;
+}
+#index p{
+	margin-left: 25px;
+	text-indent: 0;
+	padding: 5px 0;
+}
+
+/********** Table Properties **********/
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+th, td {
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+th {
+	height: 40px;
+	color: var(--accent);
+	font-size: 20px;
+}
+
+tr {
+	border: 1px solid var(--accent);
+}
+
+tr:hover {
+	background-color: #c5c5c5;
+}
+
+td {
+	font-size: 16px;
+}
+td mark {
+	font-size: 15px;
+	padding: 0 4px;
+}
+
+
+/********** Base Components **********/
+h1, h2, h3, h4 {
+	margin: 5px 0;
+	color: var(--accent);
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+	text-indent: 25px;
+	margin: 5px 0;
+}
+
+mark {
+	background-color: #cccccc;
+	padding: 2px 5px;
+	font-family: "Courier New", Courier, monospace;
+	border: 1px solid #ffffff;
+	border-radius: 2px;
+}
+
+/* ul {
+	padding: 5px;
+	list-style: none;
+}
+ul li::before {
+	width: 20px;
+	display: inline-block;
+	color: var(--accent);
+	content: "\2666";
+	font-size: 20px;
+	font-weight: bold;
+}
+li {
+	line-height: 24px;
+}
+.sublist { 
+	margin-left: 25px;
+} */
+
+hr {
+	margin: 20px 15px;
+	border-top: 2px solid var(--accent);
+}
+
+button {
+	background: none;
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 3px solid var(--accent);
+	outline: none;
+	transition-duration: 0.7s;
+}
+button:hover {
+	background-color: var(--accent);
+	color: #ffffff;
+}
+
+img {
+	width: 80%;
+	margin: 5px 0 0 10%; /*5px on top, 10% on left*/
+	border-radius: 5px;
+}
+
+a {
+	text-decoration: none;
+	/* color: black; */
+	color: var(--accent);
+	font-weight: bold;
+}
+
+canvas {
+    margin-left: calc((100% - var(--canvasW)) / 2);
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+/********** Extra Components **********/
+
+.shadow { /* Creates a shadow on a div or image */
+	box-shadow: 0 0 25px 2px #000000;
+}
+.caption {
+	width: 100%;
+	margin-top: 0;
+	text-align: center;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.center { /* Centers a div */
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.outline { /* Adds an outline to a div */
+	padding: 5px 10px;
+	border: 1px solid var(--accent);
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
