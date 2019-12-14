@@ -46,12 +46,6 @@ body {
 	text-align: left;
 }
 
-.row {
-    width: 100%;
-    height: auto;
-    padding: 5px 0;
-}
-
 /********** Footer **********/
 #footer{
 	background-color: var(--footer);
@@ -225,3 +219,15 @@ canvas {
 	margin-bottom: 10px;
 }
 
+/********** Story Components **********/
+.row {
+    width: 100%;
+    height: auto;
+	padding: 5px 0;
+	border: 1px solid black;
+	margin: 5px 0;
+}
+
+.row p {
+	text-align: center;
+}
