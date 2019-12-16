@@ -155,7 +155,7 @@ li {
 } */
 
 hr {
-	margin: 20px 15px;
+	margin-top: 5px;
 	border-top: 2px solid var(--accent);
 }
 
@@ -221,13 +221,30 @@ canvas {
 
 /********** Story Components **********/
 .row {
-    width: 100%;
-    height: auto;
+    width: calc(100% - 2px);
+	height: auto;
+	/* max-height: 0; */
 	padding: 5px 0;
-	border: 1px solid black;
 	margin: 5px 0;
-}
 
+	transition: max-height 3s ease-in-out;
+}
+/* Trying to make a transition */
+/* .row[aria-expanded="true"] {
+	max-height: 200px;
+} */
 .row p {
 	text-align: center;
+}
+
+#question {
+	padding: 5px;
+	/* border: 1px solid black; */
+}
+
+#buttons {
+	text-align: center;
+}
+#buttons button {
+	margin: 0 5px;
 }
