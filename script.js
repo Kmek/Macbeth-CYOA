@@ -41,6 +41,6 @@ function loadScene(scene) {
     buttonDiv.scrollIntoView()
 }
 
-loadScene(scenes.testScene)
-loadScene(scenes.testScene)
-loadScene(scenes.testScene)
+// loadScene(scenes.testScene)
+// loadScene(scenes.testScene)
+loadScene(scenes.sistersIntro)
