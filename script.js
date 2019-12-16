@@ -6,7 +6,7 @@ const buttonDiv = document.getElementById("buttons")
 
 //******************** Load Scene Button ********************//
 function loadScene(scene) {
-    console.log(scene)
+    // Add new row to the story div
     var newDiv = document.createElement("div")
     newDiv.setAttribute("class", "row")
 
@@ -15,8 +15,18 @@ function loadScene(scene) {
     newDiv.append(storyText)
     
     storyDiv.append(newDiv)
+
+    // Set buttons in the buttons div
+    buttonDiv.innerHTML = ""
+    for (let i = 0; i < scene.options.length; i++) {
+        let option = document.createElement("button")
+        option.innerHTML = scene.options[i]
+        option.setAttribute("onclick", ("loadScene(scenes['" + scene.links[i] + "'])"))
+        buttonDiv.append(option)
+    }
+
+    // Move down the page
+    buttonDiv.scrollIntoView()
 }
 
-loadScene(scenes.testScene)
-loadScene(scenes.testScene)
 loadScene(scenes.testScene)
