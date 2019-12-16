@@ -3,6 +3,9 @@
 //******************** HTML Components ********************//
 var pauseBtn = document.getElementById("pauseBtn")
 var pauseMenu = document.getElementById("pauseMenu")
+var genSaveBtn = document.getElementById("genSaveBtn")
+var saveInput = document.getElementById("saveInput")
+var enterSaveBtn = document.getElementById("enterSaveBtn")
 
 //******************** Toggle Pause Menu Visibility ********************//
 function togglePauseMenu() {
@@ -17,3 +20,13 @@ function togglePauseMenu() {
     }
 }
 pauseBtn.setAttribute("onclick", "togglePauseMenu()")
+
+//******************** Generate Save ********************//
+genSaveBtn.onclick = function() {
+    console.log("todo1")
+}
+
+//******************** Load Save ********************//
+enterSaveBtn.onclick = function() {
+    console.log("todo2")
+}

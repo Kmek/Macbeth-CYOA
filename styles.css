@@ -53,21 +53,21 @@ body {
 	height: 50px;
 	padding-top: 15px;
 }
-#footerText {
+/* #footerText {
 	margin-left: 15px;
 	font-size: 16px;
 	color: #ffffff;
 	float: left;
-}
-#githubBtn {
+} */
+/* #githubBtn {
 	margin-right: 15px;
 	color: #ffffff;
 	float: right;
 	font-size: 16px;
-}
+} */
 
 /********** Navigation index.html **********/
-#index button {
+/* #index button {
 	margin: 5px 0;
 	font-size: 18px;
 }
@@ -75,11 +75,11 @@ body {
 	margin-left: 25px;
 	text-indent: 0;
 	padding: 5px 0;
-}
+} */
 
 /********** Table Properties **********/
 
-table {
+/* table {
 	width: 100%;
 	border-collapse: collapse;
 	margin-top: 10px;
@@ -111,7 +111,7 @@ td {
 td mark {
 	font-size: 15px;
 	padding: 0 4px;
-}
+} */
 
 
 /********** Base Components **********/
@@ -172,26 +172,11 @@ a {
 .shadow { /* Creates a shadow on a div or image */
 	box-shadow: 0 0 25px 2px #000000;
 }
-.caption {
-	width: 100%;
-	margin-top: 0;
-	text-align: center;
-	font-size: 14px;
-	font-style: italic;
-}
 
 .center { /* Centers a div */
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.outline { /* Adds an outline to a div */
-	padding: 5px 10px;
-	border: 1px solid var(--accent);
-	border-radius: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
 }
 
 /********** Story Components **********/
