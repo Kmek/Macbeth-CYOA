@@ -8,7 +8,7 @@
 :root {
     --footer: #585858; /* a specific grey */
     --accent: #00ad88; /* a dark blue */
-    --canvasW: 654px;
+    --pageW: 450px;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 #header {
 	background-image: linear-gradient(#818181, #0a0a0a, #414141);
     width: 100%;
-    min-width: calc(var(--canvasW) + 50px);
+    min-width: calc(var(--pageW) + 50px);
 	height: 60px;
 	text-align: center;
 	padding-top: 25px;
@@ -38,7 +38,7 @@ body {
 	background-color: #eeeeee;
 	width: 75%;
 	max-width: 725px;
-	min-width: var(--canvasW);
+	min-width: var(--pageW);
 	min-height: 300px;
 	margin-left: auto;
 	margin-right: auto;
@@ -135,27 +135,8 @@ mark {
 	border-radius: 2px;
 }
 
-/* ul {
-	padding: 5px;
-	list-style: none;
-}
-ul li::before {
-	width: 20px;
-	display: inline-block;
-	color: var(--accent);
-	content: "\2666";
-	font-size: 20px;
-	font-weight: bold;
-}
-li {
-	line-height: 24px;
-}
-.sublist { 
-	margin-left: 25px;
-} */
-
 hr {
-	margin-top: 5px;
+	margin: 5px 25px 0 25px;
 	border-top: 2px solid var(--accent);
 }
 
@@ -184,12 +165,6 @@ a {
 	/* color: black; */
 	color: var(--accent);
 	font-weight: bold;
-}
-
-canvas {
-    margin-left: calc((100% - var(--canvasW)) / 2);
-    border: 2px solid #000000;
-    border-radius: 5px;
 }
 
 /********** Extra Components **********/
@@ -247,4 +222,41 @@ canvas {
 }
 #buttons button {
 	margin: 0 5px;
+}
+
+/********** Pause Components **********/
+#pauseBtn {
+	width: 40px;
+	margin-left: 15px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#pauseMenu {
+	width: 90%;
+	height: 0;	/* height in pause.js */
+	/* padding: 5px; */
+	position: relative;
+	bottom: 45px;
+
+	border-radius: 10px;
+	/* border: 1px solid var(--accent); */
+
+	background-color: var(--footer);
+
+	visibility: hidden;
+	overflow: hidden;
+}
+
+#saveInput {
+	height: 30px;
+	width: 90%;
+	margin: 10px 0;
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid var(--accent);
+}
+
+#genSaveBtn{
+	margin-top: 5px;
 }
