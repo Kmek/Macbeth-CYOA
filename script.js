@@ -13,7 +13,7 @@ function loadScene(scene) {
     // newDiv.setAttribute("aria-expanded", "false")   // For transition
     for (let i = 0; i < scene.description.length; i++){
         // Add speaker (header) and text (paragraph) for each string in descriptions
-        let desc = scene.description[i].split(";")
+        let desc = scene.description[i].split(":")
         let speakerName = document.createElement("h4")
         speakerName.innerHTML = (desc[0] + ":")
         newDiv.append(speakerName)
