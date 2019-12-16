@@ -11,9 +11,16 @@ function loadScene(scene) {
     var newDiv = document.createElement("div")
     newDiv.setAttribute("class", "row")
     // newDiv.setAttribute("aria-expanded", "false")   // For transition
-    var storyText = document.createElement("p")
-    storyText.innerHTML = scene.description
-    newDiv.append(storyText)
+    for (let i = 0; i < scene.description.length; i++){
+        // Add speaker (header) and text (paragraph) for each string in descriptions
+        let desc = scene.description[i].split(";")
+        let speakerName = document.createElement("h4")
+        speakerName.innerHTML = (desc[0] + ":")
+        newDiv.append(speakerName)
+        let storyText = document.createElement("p")
+        storyText.innerHTML = desc[1]
+        newDiv.append(storyText)
+    }
     newDiv.append(document.createElement("hr"))
     storyDiv.append(newDiv)
     // storyDiv.lastChild.setAttribute("aria-expanded", "true")  // For transition
