@@ -9,7 +9,7 @@ var scenes = {
         links: ["duncanIntro"]
     },
     duncanIntro: {
-        description: ["Duncan: Aah! A bloody soldier!", "Malcolm: Don't worry, he brings news from battle.", "Sergeant: The merciless Macdonwald has been slain by none other than the brave Macbeth. He sliced the villan down his front and mounted his dismembered head on our battlements", "Duncan: Joyous news!", "Sergeant: Indeed, but the Norweyan lord is beginning a fresh assult as we speak", "Duncan: No worries, how are the captains Macbeth and Banquo?", "Sargeant: As much as I could see, they were both in the thick of it. But I can speak no longer, my gashes cry for help."],
+        description: ["Duncan: Aah! A bloody soldier!", "Malcolm: Don't worry, he brings news from battle.", "Sergeant: The merciless Macdonwald has been slain by none other than the brave Macbeth. He sliced the villain down his front and mounted his dismembered head on our battlements", "Duncan: Joyous news!", "Sergeant: Indeed, but the Norweyan lord is beginning a fresh assault as we speak", "Duncan: No worries, how are the captains Macbeth and Banquo?", "Sergeant: As much as I could see, they were both in the thick of it. But I can speak no longer, my gashes cry for help."],
         question: "What will Duncan do?",
         options: ["Demand more info", "Request surgeons"],
         links: ["demandInfo", "getSurgeons"]
@@ -27,7 +27,7 @@ var scenes = {
         links: ["thaneCawdor"]
     },
     thaneCawdor: {
-        description: ["Duncan: Hey, who goes there?", "Malcolm: The worthy thane of Ross", "Lennox: What is that look in your eyes? What have you seen?", "Ross: God save the king!", "Duncan: Where have you travelled from thane?", "Ross: From Fife, great king. Norway has terrible numbers, but has assistance form the traitorous thane of Cawdor. But that Bellona's bridegroom confronted and crushed his lavish spirits, letting the victory fall on us.", "Duncan: Great news again!", "Ross: But now the Norweyan King craves mercy, presenting ten thousand dollars to our general use.", "Duncan: No more will the thane of Cawdor decieve our interests, pronounce him dead. Greet Macbeth with his former title.", "Ross: I'll see it done.", "Duncan: What he hath lost noble Macbeth hath won."],
+        description: ["Duncan: Hey, who goes there?", "Malcolm: The worthy thane of Ross", "Lennox: What is that look in your eyes? What have you seen?", "Ross: God save the king!", "Duncan: Where have you travelled from thane?", "Ross: From Fife, great king. Norway has terrible numbers, but has assistance form the traitorous thane of Cawdor. But that Bellona's bridegroom confronted and crushed his lavish spirits, letting the victory fall on us.", "Duncan: Great news again!", "Ross: But now the Norweyan King craves mercy, presenting ten thousand dollars to our general use.", "Duncan: No more will the thane of Cawdor deceive our interests, pronounce him dead. Greet Macbeth with his former title.", "Ross: I'll see it done.", "Duncan: What he hath lost noble Macbeth hath won."],
         question: "Continue",
         options: ["Continue"],
         links: ["macbethBanquoEncounterWitches"]
@@ -61,7 +61,7 @@ var scenes = {
         links: ["todo"]
     },
     testScene: {
-        description: ["asdfg testScene"],
+        description: ["testScene text"],
         question: "what do you choose?",
         options: ["testScene", "todo"],
         links: ["testScene", "todo"]

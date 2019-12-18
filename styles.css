@@ -20,9 +20,9 @@ body {
 	background-image: linear-gradient(#818181, #0a0a0a, #414141);
     width: 100%;
     min-width: calc(var(--pageW) + 50px);
-	height: 60px;
+	height: 85px;
 	text-align: center;
-	padding-top: 25px;
+	padding-top: 20px;
 }
 #header h1 {
     color: #ffffff;
@@ -66,54 +66,6 @@ body {
 	float: right;
 	font-size: 16px;
 } */
-
-/********** Navigation index.html **********/
-/* #index button {
-	margin: 5px 0;
-	font-size: 18px;
-}
-#index p{
-	margin-left: 25px;
-	text-indent: 0;
-	padding: 5px 0;
-} */
-
-/********** Table Properties **********/
-
-/* table {
-	width: 100%;
-	border-collapse: collapse;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-th, td {
-	border-collapse: collapse;
-	padding: 10px;
-}
-
-th {
-	height: 40px;
-	color: var(--accent);
-	font-size: 20px;
-}
-
-tr {
-	border: 1px solid var(--accent);
-}
-
-tr:hover {
-	background-color: #c5c5c5;
-}
-
-td {
-	font-size: 16px;
-}
-td mark {
-	font-size: 15px;
-	padding: 0 4px;
-} */
-
 
 /********** Base Components **********/
 h1, h2, h3, h4 {
@@ -226,7 +178,7 @@ a {
 	background-color: var(--footer);
 	overflow: hidden;
 
-	/* border: 1px solid var(--accent); */
+	/* border: 3px solid var(--accent); */
 }
 .pauseMenuHidden {
 	height: 0;	
@@ -246,6 +198,7 @@ a {
 	text-align: center;
 	border-radius: 3px;
 	border: 1px solid var(--accent);
+	background-color: #ffffff;
 }
 
 #genSaveBtn{
