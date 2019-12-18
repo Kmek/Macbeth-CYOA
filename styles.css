@@ -145,9 +145,22 @@ a {
 /* .row[aria-expanded="true"] {
 	max-height: 200px;
 } */
+.row h4 {
+	text-align: left;
+}
 .row p {
-	/* text-align: center; */
+	text-align: left;
 	margin-left: 10px;
+}
+.row div { /* div for caption */
+	width: 100%;
+}
+.row div p { /* caption */
+	font-style: italic;
+	text-align: center;
+	font-size: 14px;
+	margin-left: 0;
+	background-color: lightgrey;
 }
 
 #question {

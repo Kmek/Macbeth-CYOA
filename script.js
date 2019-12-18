@@ -20,12 +20,23 @@ function loadScene(sceneName) {
     for (let i = 0; i < scene.description.length; i++){
         // Add speaker (header) and text (paragraph) for each string in descriptions
         let desc = scene.description[i].split(":")
-        let speakerName = document.createElement("h4")
-        speakerName.innerHTML = (desc[0] + ":")
-        newDiv.append(speakerName)
-        let storyText = document.createElement("p")
-        storyText.innerHTML = desc[1]
-        newDiv.append(storyText)
+        if (desc.length == 2) {
+            let speakerName = document.createElement("h4")
+            speakerName.innerHTML = (desc[0] + ":")
+            newDiv.append(speakerName)
+            let storyText = document.createElement("p")
+            storyText.innerHTML = desc[1]
+            newDiv.append(storyText)
+        }
+        else {
+            let stageNote = document.createElement("p")
+            // stageNote.setAttribute("class", "caption")
+            // stageNote.setAttribute("class", "center")
+            stageNote.innerHTML = desc[0]
+            let div = document.createElement("div")
+            div.append(stageNote)
+            newDiv.append(div)
+        }
     }
     newDiv.append(document.createElement("hr"))
     storyDiv.append(newDiv)
