@@ -31,8 +31,9 @@ body {
 /********** Page **********/
 #pageBackground {
 	background-color: var(--accent);
-	/* background-image: url("./media/Paper.png"); */
-	/* background-repeat: repeat; */
+	/* background looks like blood */
+	background-image: url("./media/Paper.png");
+	background-repeat: repeat;
 } 
 #page {
 	background-color: #eeeeee;
