@@ -9,17 +9,18 @@ var enterSaveBtn = document.getElementById("enterSaveBtn")
 
 //******************** Toggle Pause Menu Visibility ********************//
 function togglePauseMenu() {
-    if (pauseMenu.style.visibility == "visible") {
-        pauseMenu.style.visibility = "hidden"
-        pauseMenu.style.height = "0"
-    }
-    else {
-        pauseMenu.style.visibility = "visible"
-        pauseMenu.style.height = "130px"
-        pauseMenu.scrollIntoView()
-    }
+    pauseMenu.classList.toggle("pauseMenuHidden")
+    pauseMenu.classList.toggle("pauseMenuVisible")
+
+    pauseMenu.scrollIntoView()
 }
 pauseBtn.setAttribute("onclick", "togglePauseMenu()")
+
+//******************** Get Keys ********************//
+// Get keys in an array for saving
+var sceneIds = []
+for (k in scenes)
+    sceneIds.push(k)
 
 //******************** Generate Save ********************//
 genSaveBtn.onclick = function() {

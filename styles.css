@@ -7,7 +7,7 @@
 
 :root {
     --footer: #585858; /* a specific grey */
-    --accent: #00ad88; /* a dark blue */
+    --accent: #ce0f0f;
     --pageW: 450px;
 }
 
@@ -123,7 +123,7 @@ h1, h2, h3, h4 {
 p {
 	font-size: 16px;
 	line-height: 24px;
-	text-indent: 25px;
+	/* text-indent: 25px; */
 	margin: 5px 0;
 }
 
@@ -136,7 +136,7 @@ mark {
 }
 
 hr {
-	margin: 5px 25px 0 25px;
+	margin: 25px 60px;
 	border-top: 2px solid var(--accent);
 }
 
@@ -183,9 +183,8 @@ a {
 .row {
     width: calc(100% - 2px);
 	height: auto;
-	/* max-height: 0; */
-	padding: 5px 0;
-	margin: 5px 0;
+	margin: 5px 0 /*5px 15px*/;
+	/* border: 1px solid black; */
 
 	transition: max-height 3s ease-in-out;
 }
@@ -194,7 +193,8 @@ a {
 	max-height: 200px;
 } */
 .row p {
-	text-align: center;
+	/* text-align: center; */
+	margin-left: 10px;
 }
 
 #question {
@@ -218,19 +218,24 @@ a {
 }
 
 #pauseMenu {
-	width: 90%;
-	height: 0;	/* height in pause.js */
-	/* padding: 5px; */
+	width: 98%;
 	position: relative;
-	bottom: 45px;
-
+	bottom: 5px;
 	border-radius: 10px;
-	/* border: 1px solid var(--accent); */
-
 	background-color: var(--footer);
-
-	visibility: hidden;
 	overflow: hidden;
+
+	/* border: 1px solid var(--accent); */
+}
+.pauseMenuHidden {
+	height: 0;	
+	margin-top: 0;
+	visibility: hidden;
+}
+.pauseMenuVisible {
+	height: 100px;
+	margin-top: -100px;
+	visibility: visible;
 }
 
 #saveInput {
@@ -243,5 +248,6 @@ a {
 }
 
 #genSaveBtn{
-	margin-top: 5px;
+	margin-top: 10px;
+	margin-right: 15px;
 }
