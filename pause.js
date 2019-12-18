@@ -20,7 +20,7 @@ function togglePauseMenu() {
 }
 pauseBtn.setAttribute("onclick", "togglePauseMenu()")
 
-//******************** Get Keys ********************//
+//******************** Scene Keys ********************//
 // Get keys in an array for saving
 var sceneIds = []
 for (k in scenes)
@@ -47,8 +47,20 @@ enterSaveBtn.onclick = function() {
     let save = []
     save = saveInput.value.split("-")
 
-    ////////// Something here should validate the entered save
-    if (save.length < 2) {
+    // Validate the save by checking if the scenes can be accessed in the given order
+    let check = false
+    for (let i = 1; i < save.length; i++) {
+        check = false
+        // Ensure that only a valid scene # is entered
+        if (save[i] >= sceneIds.length) 
+            break
+        // Ensure the scene can be accessed from the previous
+        if (scenes[sceneIds[save[i - 1]]].links.includes(sceneIds[save[i]]))
+            check = true
+        else 
+            break
+    }
+    if (save.length < 2 || save[0] != "0" || !check) {
         saveInput.style.backgroundColor = "#c42b2b"
         return 0
     }
