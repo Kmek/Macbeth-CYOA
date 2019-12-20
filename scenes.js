@@ -117,32 +117,56 @@ var scenes = {
     },
     //******* Scene 1.5 *******//
     ladyMacbethLetter: {
-        description: ["Enter Lady Macbeth, reading a letter", "Lady macbeth: 'They met me in the day of success, and I have learned by the perfectest report, they have more in them than mortal knowledge. When I burned in desire to question them further, they made themselves air, into which they vanished. Whiles I stood rapt in the wonder of it, came missives from the king, who all-hailed me 'Thane of Cawdor;' by which title, before, these weird sisters saluted me, and referred me to the coming on of time, with 'Hail, king that shalt be!' This have I thought good to deliver thee, my dearest partner of greatness, that thou mightst not lose the dues of rejoicing, by being ignorant of what greatness is promised thee. Lay it to thy heart, and farewell.'", "Lady Macbeth: Glamis thou art, and Cawdor; and shalt be what thou art promised. yet do I fear thy nature; it is too full o' the milk of human kindness to catch the nearest way. Thou wouldst be great; art not without ambition, but without the illness should attend it. What thou wouldst highly, that wouldst thou holily; wouldst not play false, and yet wouldst wrongly win. Thou'ldst have, great Glamis, that which cries 'Thus thou must do, if thou have it; and that which rather thou dost fear to do than wishest should be undone.' Hie thee hither, that I may pour my spirits in thine ear; and chastise with the valour of my tongue all that impedes thee from the golden round, which fate and metaphysical aid doth seem to have thee crown'd withal.", "Enter a messenger", "Lady Macbeth: What is your tidings?", "Messenger: The king comes here to-night", "Lady Macbeth: Thou'rt mad to say it. Is not thy master with him? who, were't so, would have inform'd for preparation.", "Messenger: So please you, it is true: our thane is coming. One of my fellows had the speed of him who, almost dead for breath, had scarcely more, than would make up his message.", "Lady Macbeth: Give him tending, he brings great news.", "Exit Messenger", "Lady Macbeth: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+        description: ["Enter Lady Macbeth, reading a letter", "Lady macbeth: 'They met me in the day of success, and I have learned by the perfectest report, they have more in them than mortal knowledge. When I burned in desire to question them further, they made themselves air, into which they vanished. Whiles I stood rapt in the wonder of it, came missives from the king, who all-hailed me 'Thane of Cawdor;' by which title, before, these weird sisters saluted me, and referred me to the coming on of time, with 'Hail, king that shalt be!' This have I thought good to deliver thee, my dearest partner of greatness, that thou mightst not lose the dues of rejoicing, by being ignorant of what greatness is promised thee. Lay it to thy heart, and farewell.'", "Lady Macbeth: Glamis thou art, and Cawdor; and shalt be what thou art promised. yet do I fear thy nature; it is too full o' the milk of human kindness to catch the nearest way. Thou wouldst be great; art not without ambition, but without the illness should attend it. What thou wouldst highly, that wouldst thou holily; wouldst not play false, and yet wouldst wrongly win. Thou'ldst have, great Glamis, that which cries 'Thus thou must do, if thou have it; and that which rather thou dost fear to do than wishest should be undone.' Hie thee hither, that I may pour my spirits in thine ear; and chastise with the valour of my tongue all that impedes thee from the golden round, which fate and metaphysical aid doth seem to have thee crown'd withal.", "Enter a messenger", "Lady Macbeth: What is your tidings?", "Messenger: The king comes here to-night", "Lady Macbeth: Thou'rt mad to say it. Is not thy master with him? who, were't so, would have inform'd for preparation.", "Messenger: So please you, it is true: our thane is coming. One of my fellows had the speed of him who, almost dead for breath, had scarcely more, than would make up his message.", "Lady Macbeth: Give him tending, he brings great news.", "Exit Messenger"],
+        question: "What will Lady Macbeth do?",
+        options: ["Plot murder", "Be a great host"],
+        links: ["ladyMacbethYesMurder", "ladyMacbethNoMurder"]
     },
-macbethAndLadyPlanMurder: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+    ladyMacbethNoMurder: {
+        description: ["Lady Macbeth: This is a great fortune! The King doesn't visit just anyone's home for dinner. We are honored!", "Lady Macbeth greets Macbeth with pride upon his arrival home", "The house prepares for dinner fit for a King", "Macbeth wonders about the witches prophecy, but forgets about it during the dinner festivities"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["greatKingDinner"]
     },
-DuncanEntersMacbethCastle: {	// Needed?
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+    greatKingDinner: {
+        description: ["Duncan: That was a lovely dinner. Thank you honorable Macbeth, you are truly in my trust.", "Duncan returns to his home in full health", "Lady Macbeth dismisses Macbeth's strange interactions with the witches, calling them unmanly and unholy", "Macbeth also dismisses them as absurd"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["kingDuncanDies"],
     },
-macbethAfraidOfMurder: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+    kingDuncanDies: {
+        description: ["King Duncan, on his deathbed from a life lived to the fullest", "Duncan: My most trusted Macbeth, you have worked under me for the past few years in my failing health. It is now time for me to pass on my torch and title to another, none other than you.", "Macbeth is crowned King in good favor, it just took time", "Lady Macbeth and Macbeth reflect on the old forgotten prophecy from the witches like an old story"],
+        question: "Finish",
+        options: ["Finish"],
+        links: ["endingHonorableKingMacbeth"],
+    },
+    ladyMacbethYesMurder: {
+        description: ["Lady Macbeth: The raven himself is hoarse that croaks the fatal entrance of Duncan under my battlements. Come, you spirits that tend on mortal thoughts, unsex me here, and fill me from the crown to the toe top-full of direst cruelty! make thick my blood. Stop up the access and passage to remorse that no compunctious visitings of nature shake my fell purpose, nor keep peace between the effect and it! Come to my woman's breasts, and take my milk for gall, you murdering ministers, wherever in your sightless substances you wait on nature's mischief! Come, thick night, and pall thee in the dunnest smoke of hell, that my keen knife see not the wound it makes, nor heaven peep through the blanket of the dark, to cry 'Hold, hold!'"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethAndLadyPlanMurder"]
+    },
+    macbethAndLadyPlanMurder: {
+        description: ["Macbeth arrives home and is greeted by Lady Macbeth", "Lady macbeth proposes her plan to Macbeth to murder King Duncan"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["DuncanEntersMacbethCastle"]
+    },
+    DuncanEntersMacbethCastle: {	// Needed?
+        description: ["King Duncan arrives to the Macbeth Castle", "He complements their home", "He wishes to speak with Macbeth rather than Lady Macbeth"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethAfraidOfMurder"]
+    },
+    macbethAfraidOfMurder: {
+        description: ["Macbeth is in his room", "Lady Macbeth is upset that he has left the chamber, King Duncan has asked for Macbeth", "Macbeth isn't feeling great about planning to murder King Duncan", "Lady Macbeth thinks that he is unmanly for such thoughts"],
+        question: "What will Macbeth do?",
+        options: ["Agree to murder", "Put Lady Macbeth in her place", ""],
+        links: ["banquoFleanceOnWatch"]
     },
 // Act 2
 banquoFleanceOnWatch: {	// Needed?
-        description: ["todo: todo"],
+        description: ["Banquo and Fleance are on watch", "Banquo is tired from bad dreams about the witches", "Banquo wants to discuss the witches with Macbeth"],
         question: "todo",
         options: ["todo"],
         links: ["todo"]
@@ -414,7 +438,13 @@ macduffFamilySad: {
 
 
     // 0-1-2-4-5-6-8-9-11-12-13-15-16-17-18
-
+    //******************** Endings ********************//
+    endingHonorableKingMacbeth: {   // Good ending 1/?
+        description: ["Honorable King Macbeth [Ending 1/?]"],
+        question: "",
+        options: [""],
+        links: [""],
+    },
     //******************** Todo Scene ********************//
     todo: {
         description: ["todo: todo"],

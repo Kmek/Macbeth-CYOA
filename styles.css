@@ -43,7 +43,7 @@ body {
 	min-height: 300px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 15px 25px;
+	padding: 5px 25px 15px 25px;
 	text-align: left;
 }
 
@@ -136,7 +136,7 @@ a {
 .row {
     width: calc(100% - 2px);
 	height: auto;
-	margin: 5px 0 /*5px 15px*/;
+	margin: 0 /*5px 15px*/;
 	/* border: 1px solid black; */
 
 	transition: max-height 3s ease-in-out;
