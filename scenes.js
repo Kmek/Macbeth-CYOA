@@ -123,10 +123,16 @@ var scenes = {
         links: ["ladyMacbethYesMurder", "ladyMacbethNoMurder"]
     },
     ladyMacbethNoMurder: {
-        description: ["Lady Macbeth: This is a great fortune! The King doesn't visit just anyone's home for dinner. We are honored!", "Lady Macbeth greets Macbeth with pride upon his arrival home", "The house prepares for dinner fit for a King", "Macbeth wonders about the witches prophecy, but forgets about it during the dinner festivities"],
+        description: ["Lady Macbeth: This is a great fortune! The King doesn't visit just anyone's home for dinner. We are honored!", "Lady Macbeth greets Macbeth with pride upon his arrival home", ],
         question: "Continue",
         options: ["Continue"],
-        links: ["greatKingDinner"]
+        links: ["housePreparesDinner"]
+    },
+    housePreparesDinner: {
+        description: ["The house prepares for dinner fit for a King", "Macbeth wonders about the witches prophecy, but forgets about it during the dinner festivities"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["greatKingDinner"],
     },
     greatKingDinner: {
         description: ["Duncan: That was a lovely dinner. Thank you honorable Macbeth, you are truly in my trust.", "Duncan returns to his home in full health", "Lady Macbeth dismisses Macbeth's strange interactions with the witches, calling them unmanly and unholy", "Macbeth also dismisses them as absurd"],
@@ -161,8 +167,32 @@ var scenes = {
     macbethAfraidOfMurder: {
         description: ["Macbeth is in his room", "Lady Macbeth is upset that he has left the chamber, King Duncan has asked for Macbeth", "Macbeth isn't feeling great about planning to murder King Duncan", "Lady Macbeth thinks that he is unmanly for such thoughts"],
         question: "What will Macbeth do?",
-        options: ["Agree to murder", "Put Lady Macbeth in her place", ""],
-        links: ["banquoFleanceOnWatch"]
+        options: ["Agree to murder", "Put Lady Macbeth in her place", "Say no to murder"],
+        links: ["banquoFleanceOnWatch", "macbethStereotypeMan", "macbethSayNoToMurder"]
+    },
+    macbethStereotypeMan: {
+        description: ["Macbeth insults Lady macbeth for having such ambition", "Macbeth says she is unwomanly for such thoughts"],
+        question: "What will Macbeth do?",
+        options: ["Plot murder himself", "Say no to murder"],
+        links: ["macbethSoloMurder", "macbethSayNoToMurder"]
+    },
+    macbethSoloMurder: {
+        description: ["Macbeth decides to plan murder on his own", "He kills King Duncan while he sleeps, and then freaks out about the blood", "The guards wake up and Macbeth is caught red-handed at the scene of the crime", "Macbeth is tried for his murderous crime and found guilty"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["endingTraitorMacbeth"]
+    },
+    macbethSayNoToMurder: {
+        description: ["Macbeth shuts down the idea of murder", "Macbeth double-trusts the King, he doesn't want to commit murder among friends"],
+        question: "What should Lady macbeth do?",
+        options: ["Plot murder herself", "Say no to murder"],
+        links: ["ladyMacbethSoloMurder", "housePreparesDinner"]
+    },
+    ladyMacbethSoloMurder: {
+        description: ["Lady Macbeth decides to plan murder on her own", "Lady Macbeth thinks ahead and compromises the guards with alcohol", "She enters Duncan's room, but cannot bring herself to kill the kind King, as he looks like her own father", "Lady Macbeth leaves the room and Duncan is safe"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["endingCowardLadyMacbeth"]
     },
 // Act 2
 banquoFleanceOnWatch: {	// Needed?
@@ -441,6 +471,18 @@ macduffFamilySad: {
     //******************** Endings ********************//
     endingHonorableKingMacbeth: {   // Good ending 1/?
         description: ["Honorable King Macbeth [Ending 1/?]"],
+        question: "",
+        options: [""],
+        links: [""],
+    },
+    endingTraitorMacbeth: {   // Bad ending 2/?
+        description: ["Unprepared Macbeth [Ending 2/?]"],
+        question: "",
+        options: [""],
+        links: [""],
+    },
+    endingCowardLadyMacbeth: {   // Good ending 3/?
+        description: ["Faint-Hearted Lady Macbeth [Ending 3/?]"],
         question: "",
         options: [""],
         links: [""],

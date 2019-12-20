@@ -17,7 +17,6 @@ function loadScene(sceneName) {
     var newDiv = document.createElement("div")
     newDiv.setAttribute("class", "row")
     newDiv.append(document.createElement("hr"))
-    // newDiv.setAttribute("aria-expanded", "false")   // For transition
     for (let i = 0; i < scene.description.length; i++){
         // Add speaker (header) and text (paragraph) for each string in descriptions
         let desc = scene.description[i].split(":")
@@ -41,7 +40,6 @@ function loadScene(sceneName) {
     }
     storyDiv.append(newDiv)
     newDiv.scrollIntoView()
-    // storyDiv.lastChild.setAttribute("aria-expanded", "true")  // For transition
 
     // Set the question to the new question
     question.innerHTML = scene.question;
@@ -50,13 +48,12 @@ function loadScene(sceneName) {
     buttonDiv.innerHTML = ""
     for (let i = 0; i < scene.options.length; i++) {
         let option = document.createElement("button")
-        option.innerHTML = scene.options[i]
-        option.setAttribute("onclick", ("loadScene('" + scene.links[i] + "')"))
-        buttonDiv.append(option)
+        if (scene.options[i] != "") {
+            option.innerHTML = scene.options[i]
+            option.setAttribute("onclick", ("loadScene('" + scene.links[i] + "')"))
+            buttonDiv.append(option)
+        }
     }
-
-    // Move down the page
-    // buttonDiv.scrollIntoView()
 }
 
 loadScene("sistersIntro")

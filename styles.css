@@ -141,10 +141,6 @@ a {
 
 	transition: max-height 3s ease-in-out;
 }
-/* Trying to make a transition */
-/* .row[aria-expanded="true"] {
-	max-height: 200px;
-} */
 .row h4 {
 	text-align: left;
 }
