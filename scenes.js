@@ -197,18 +197,30 @@ var scenes = {
 // Act 2
 banquoFleanceOnWatch: {	// Needed?
         description: ["Banquo and Fleance are on watch", "Banquo is tired from bad dreams about the witches", "Banquo wants to discuss the witches with Macbeth"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethSeesADagger"]
     },
-macbethKillsDuncan: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+    macbethSeesADagger: {
+        description: ["In the night, Lady Macbeth helps stage the murder by getting the guards drunk", "Meanwhile, Macbeth sees a dagger hallucination before him, debates about his part in killing the kind King Duncan"],
+        question: "What will Macbeth do?",
+        options: ["Continue against his intuition", "Listen to reason and abandon the plan"],
+        links: ["macbethKillsDuncan", "todo"]
     },
-ladyMacPutsDaggersBack: {
-        description: ["todo: todo"],
+    macbethKillsDuncan: {
+        description: ["Macbeth kills King Duncan while he sleeps", "Thoroughly freaked out, Macbeth returns to his own room still holding the bloody daggers", "Lady Macbeth is upset that he brought the murder weapons into their room"],
+        question: "What will Lady Macbeth do?",
+        options: ["Demand Macbeth return the daggers at once", "Return the daggers herself"],
+        links: ["macbethReturnsDaggers", "ladyMacPutsDaggersBack"]
+    },
+    macbethReturnsDaggers: {
+        description: ["In a haze, Macbeth wanders around the castle", "He awakens several guests, who sound a alarm at the sight of bloody Macbeth", "Macbeth is captured and found guilty for the murder of King Duncan"],
+        question: "tContinue",
+        options: ["Continue"],
+        links: ["endingIncompetentMacbeth"]
+    },
+    ladyMacPutsDaggersBack: {
+        description: ["Lady Macbeth brings the daggers into the room with the drunk sleeping guards", "She smears them with blood to stage the crime"],
         question: "todo",
         options: ["todo"],
         links: ["todo"]
@@ -483,6 +495,12 @@ macduffFamilySad: {
     },
     endingCowardLadyMacbeth: {   // Good ending 3/?
         description: ["Faint-Hearted Lady Macbeth [Ending 3/?]"],
+        question: "",
+        options: [""],
+        links: [""],
+    },
+    endingIncompetentMacbeth: {   // Bad ending 4/?
+        description: ["Incompetent Macbeth [Ending 4/?]"],
         question: "",
         options: [""],
         links: [""],
