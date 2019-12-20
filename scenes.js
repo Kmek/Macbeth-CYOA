@@ -205,7 +205,7 @@ banquoFleanceOnWatch: {	// Needed?
         description: ["In the night, Lady Macbeth helps stage the murder by getting the guards drunk", "Meanwhile, Macbeth sees a dagger hallucination before him, debates about his part in killing the kind King Duncan"],
         question: "What will Macbeth do?",
         options: ["Continue against his intuition", "Listen to reason and abandon the plan"],
-        links: ["macbethKillsDuncan", "todo"]
+        links: ["macbethKillsDuncan", "housePreparesDinner"]
     },
     macbethKillsDuncan: {
         description: ["Macbeth kills King Duncan while he sleeps", "Thoroughly freaked out, Macbeth returns to his own room still holding the bloody daggers", "Lady Macbeth is upset that he brought the murder weapons into their room"],
@@ -215,78 +215,68 @@ banquoFleanceOnWatch: {	// Needed?
     },
     macbethReturnsDaggers: {
         description: ["In a haze, Macbeth wanders around the castle", "He awakens several guests, who sound a alarm at the sight of bloody Macbeth", "Macbeth is captured and found guilty for the murder of King Duncan"],
-        question: "tContinue",
+        question: "Continue",
         options: ["Continue"],
         links: ["endingIncompetentMacbeth"]
     },
     ladyMacPutsDaggersBack: {
-        description: ["Lady Macbeth brings the daggers into the room with the drunk sleeping guards", "She smears them with blood to stage the crime"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+        description: ["Lady Macbeth brings the daggers into the room with the drunk sleeping guards", "She smears them with blood to stage the crime", "Macbeth is appalled with his murderous actions"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["ladyMacBraverThanMacbeth"]
     },
-ladyMacBraverThanMacbeth: {	// Needed?
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+    // 0-1-2-4-5-6-8-9-11-12-13-15-16-17-18-23-24-25-26-31-32-33-35
+    ladyMacBraverThanMacbeth: {	// Needed?
+        description: ["Lady Macbeth scolds Macbeth for being so wimpy", "They wash their hands of the deed and go back to bed"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["awakeDuncan"]
     },
-porterRant: {	// Needed?
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+    awakeDuncan: {
+        description: ["Macduff and Lennox come to awake the King", "They speak of a crazy night of last", "Macduff finds the late King first", "Everyone is distraught", "Macbeth admits he killed the guards in his sadness"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["menMakeAMeeting"]
     },
-awakeDuncan: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-menMakeAMeeting: {
-        description: ["todo: todo"],
+    menMakeAMeeting: {
+        description: ["The men decide they must discuss this further, once they are all dressed", "The King's sons, Donalbain and Malcolm, are afraid someone might be out to get them too"],
         question: "What will Malcolm and Donalbain do?",
         options: ["Stay", "Flee"],
         links: ["malcolmDonalbainStay", "malcolmDonalbainFlee"]
     },
-malcolmDonalbainLeave: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-malcolmDonalbainStay: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-rossAndOldMan: {  // Needed?
-        description: ["todo: todo"],
+    malcolmDonalbainStay: {
+        description: ["Malcolm and Donalbain stay", "They leave to their own castle as soon as possible, suspicious of everyone and everything", "Malcolm is crowned King, but he hardly shows his face for the first few years of his reign", "King Duncan's murderers were assumed to be the guards", "Macbeth and Lady Macbeth could never get close enough to royalty to commit another murder"],
         question: "Continue",
         options: ["Continue"],
-        links: ["introMacduff"]
+        links: ["endingKingMalcolm"]
     },
-introMacduff: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+    malcolmDonalbainFlee: {
+        description: ["Malcolm leaves to England", "Donalbain leaves to Ireland"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["rossAndOldMan"]
+    },
+    // 0-1-2-4-5-6-8-9-11-12-13-15-16-17-18-23-24-25-26-31-32-33-35-36-37-38-40
+    rossAndOldMan: {  // Needed?
+        description: ["An Old Man and Ross discuss the strange unnatural happenings of the world", "Macduff joins them and reports that the guards, believed to be knowledgeable in Duncan's Death, were killed by Macbeth", "They are all suspicious of Malcolm and Donalbain for running away without a word", "Ross reports that Macbeth has gone to be crowned king, as the King's sons cannot be found"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["banquoWonders"]
     },
 // Act 3
-banquoWonders: {
-        description: ["Enter Banquo", "todo: todo"],
+    banquoWonders: {
+        description: ["Banquo reflects how Macbeth received all that the witches promised him", "He worries that Macbeth played foully for these positions"],
         question: "Continue",
         options: ["Continue"],
         links: ["kingMacbethPlansDinner"]
     },
-kingMacbethPlansDinner: {
-        description: ["Sennet sounded. Enter Macbeth, as king, Lady Macbeth, as queen, Lennox, Ross, Lords, Ladies, and Attendants", "todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+    kingMacbethPlansDinner: {
+        description: ["Sennet sounded. Enter Macbeth, as king, Lady Macbeth, as queen, Lennox, Ross, Lords, Ladies, and Attendants", "King Macbeth socializes and plans a dinner party", "Before dinner, Banquo plans to ride his horse", "Macbeth wants all the details of Banquo's trip before he leaves"],
+        question: "What will Macbeth do?",
+        options: ["Plan another murder", "Have a nice (but awkward) dinner party"],
+        links: ["macbethPlansBanquoMurder", "todo"]
     },
-macbethPlansBanquoMurder: {
+    macbethPlansBanquoMurder: {
         description: ["Exit Attendant", "todo: todo"],
         question: "todo",
         options: ["todo"],
@@ -479,7 +469,6 @@ macduffFamilySad: {
 
 
 
-    // 0-1-2-4-5-6-8-9-11-12-13-15-16-17-18
     //******************** Endings ********************//
     endingHonorableKingMacbeth: {   // Good ending 1/?
         description: ["Honorable King Macbeth [Ending 1/?]"],
@@ -501,6 +490,12 @@ macduffFamilySad: {
     },
     endingIncompetentMacbeth: {   // Bad ending 4/?
         description: ["Incompetent Macbeth [Ending 4/?]"],
+        question: "",
+        options: [""],
+        links: [""],
+    },
+    endingKingMalcolm: {   // Good ending 5/?
+        description: ["Fearful King Malcolm [Ending 5/?]"],
         question: "",
         options: [""],
         links: [""],

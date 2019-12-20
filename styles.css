@@ -208,6 +208,7 @@ a {
 	border-radius: 3px;
 	border: 1px solid var(--accent);
 	background-color: #ffffff;
+	outline: none;
 }
 
 #genSaveBtn{
