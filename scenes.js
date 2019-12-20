@@ -384,87 +384,76 @@ banquoFleanceOnWatch: {	// Needed?
         options: ["Continue"],
         links: ["introHecate"]
     },
-// Scene 3.5
-introHecate: {  // Needed?
+    // Scene 3.5
+    introHecate: {  // Needed?
         description: ["Thunder. Enter the three witches meeting Hecate", "Hecate is upset that they meddled in human affairs", "Exeunt"],
         question: "Continue",
         options: ["Continue"],
         links: ["macduffUpdate"]
     },
-macduffUpdate: {  // Needed?
+    macduffUpdate: {  // Needed?
         description: ["Enter Lennox and another Lord", "They discuss Macbeth's misdeeds, referring to the King as the Tyrant", "They reveal that Macduff lives in disgrace", "Exeunt"],
         question: "Continue",
         options: ["Continue"],
         links: ["witchesMakePotion"]
     },
-// Act 4
-witchesMakePotion: {  // Needed?
+    // Act 4
+    witchesMakePotion: {  // Needed?
         description: ["Thunder. Enter the three witches", "The witches are singing and making a potion of many disgusting things"],
         question: "Continue",
         options: ["Continue"],
         links: ["macbethWantsInfo"]
     },
-macbethWantsInfo: {
-        description: ["Enter Macbeth", "Macbeth demands information from the three witches", "They call upon their 'masters' for Macbeth to speak to", "Macbeth drinks their nasty potion"],
+    macbethWantsInfo: {
+        description: ["Enter Macbeth", "Macbeth demands information from the three witches", "They call upon their 'masters' for Macbeth to speak to"],
+        question: "What will Macbeth do?",
+        options: ["Drink their potion", ""],
+        links: ["apparitions", "todo"]
+    },
+    apparitions: {
+        description: ["Macbeth drinks the poition from the witches", "Thunder. First Apparition, an armed Head which tells Macbeth to beware of Macduff", "Thunder. Second Apparition, a bloody Child which says no man born of woman shall harm Macbeth", "Thunder. Third Apparition, a Child crowned, with a tree in his hand, says Macbeth won't die until great Birnam wood comes to high Dunsinane hill."],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["lennoxFoundMacbeth"]
+    },
+    lennoxFoundMacbeth: {
+        description: ["The witches dance and then vanish", "Macbeth is found by Lennox while looking for the witches", "No one else but Macbeth saw the witches", "Macbeth is told that Macduff has fled to England"],
+        question: "What will Macbeth do?",
+        options: ["Leave Macduff alone", "Surprise Castle Macduff"],
+        links: ["leaveMacduffAlone", "surpriseMacduffCastle"]
+    },
+    leaveMacduffAlone: {
+        description: ["Macbeth decides to leave Macduff alone, as he's in England so he's their problem"],
         question: "Continue",
         options: ["Continue"],
         links: ["todo"]
     },
-apparitionOne: {
-        description: ["todo: todo"],
+    surpriseMacduffCastle: {
+        description: ["Macbeth decides to surprise the Macduff castle, as Macbeth thinks that Macduff is a threat to his reign", "Exeunt"],
         question: "Continue",
         options: ["Continue"],
-        links: ["todo"]
+        links: ["ladyDuffWonders"]
     },
-apparitionTwo: {
-        description: ["todo: todo"],
-        question: "Continue",
-        options: ["Continue"],
-        links: ["todo"]
-    },
-apparitionThree: {
-        description: ["todo: todo"],
-        question: "Continue",
-        options: ["Continue"],
-        links: ["todo"]
-    },
-ghostBanquoKings: {  // Needed?
-        description: ["todo: todo"],
-        question: "Continue",
-        options: ["Continue"],
-        links: ["todo"]
-    },
-lennoxFoundMacbeth: {
-        description: ["todo: todo"],
-        question: "Continue",
-        options: ["Continue"],
-        links: ["todo"]
-    },
-// Scene 4.2
-ladyDuffWonders: {  // Needed?
-        description: ["todo: todo"],
+    // Scene 4.2
+    ladyDuffWonders: {  // Needed?
+        description: ["Enter Lady Macduff, her son, and Ross", "Lady Macduff wonders to ross why her husband ran away", "Ross tries to justify Macduff's actions, but must leave", "Exit Ross"],
         question: "Continue",
         options: ["Continue"],
         links: ["sonMacduffWonders"]
     },
-sonMacduffWonders: {
-        description: ["todo: todo"],
+    sonMacduffWonders: {
+        description: ["Lady Macduff debates with her son about wether or not Macduff is alive or not", "They also debate about the traitors vs honest men in life", "A Messenger tries to warn them to leave, but they don't listen so the messenger leaves"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macduffFamilyMurdered"]
+    },
+    macduffFamilyMurdered: {
+        description: ["Enter Murderers", "The murderers kill the son of Macduff, and then kill the wife of Macduff"],
         question: "Continue",
         options: ["Continue"],
         links: ["todo"]
     },
-macduffFamilyMurdered: { // Missing the scene that macbeth decides to do this
-        description: ["todo: todo"],
-        question: "Continue",
-        options: ["Continue"],
-        links: ["todo"]
-    },
-macduffFamilySad: {
-        description: ["todo: todo"],
-        question: "Continue",
-        options: ["Continue"],
-        links: ["todo"]
-    },
+    
 // Scene 4.3
 
 
