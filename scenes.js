@@ -322,9 +322,8 @@ banquoFleanceOnWatch: {	// Needed?
         description: ["Macbeth holds himself under control for as long as he can, but he starts crying too", "The dinner is cut short, as Macbeth cannot stop crying"],
         question: "Continue",
         options: ["Continue"],
-        links: ["todo"]
+        links: ["macbethPlansDuffMurder"]
     },
-    
     murderersKillBanquo: {
         description: ["Stealthily, the three murderers kill both Banquo in the night, but they cannot bear to kill an innocent child", "Fleance escapes into the night"],
         question: "Continue",
@@ -353,9 +352,8 @@ banquoFleanceOnWatch: {	// Needed?
         description: ["The dinner party is ruined, and the guests go home, concerned about their new King"],
         question: "Continue",
         options: ["Continue"],
-        links: ["todo"]
+        links: ["macbethPlansDuffMurder"]
     },
-    
     murderersDontKill: {
         description: ["The three murderers decide that they cannot kill Banquo or Fleance"],
         question: "Continue",
@@ -364,9 +362,9 @@ banquoFleanceOnWatch: {	// Needed?
     },
     macbethHearsOfNone: {
         description: ["The murderers return to the castle in time for dinner", "They inform King Macbeth that they did not kill Banquo or Fleance", "Macbeth is upset"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethGreetsBanquo"]
     },
     macbethGreetsBanquo: {
         description: ["The dinner begins and guests start arriving", "Macbeth greets Banquo in full health"],
@@ -378,62 +376,68 @@ banquoFleanceOnWatch: {	// Needed?
         description: ["Everyone has a seat at King Macbeth's table", "Banquo, Macbeth's dear friend, has a seat right next to Macbeth", "Everyone is jolly and enjoys the dinner"],
         question: "Continue",
         options: ["Continue"],
-        links: ["todo"]
+        links: ["macbethPlansDuffMurder"]
+    },
+    macbethPlansDuffMurder: {  // Needed?
+        description: ["Exeunt all but Macbeth and Lady Macbeth", "Macbeth and Lady Macbeth are worried about Macduff", "Macbeth plans to visit the witches again"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["introHecate"]
     },
 // Scene 3.5
 introHecate: {  // Needed?
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+        description: ["Thunder. Enter the three witches meeting Hecate", "Hecate is upset that they meddled in human affairs", "Exeunt"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macduffUpdate"]
     },
 macduffUpdate: {  // Needed?
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+        description: ["Enter Lennox and another Lord", "They discuss Macbeth's misdeeds, referring to the King as the Tyrant", "They reveal that Macduff lives in disgrace", "Exeunt"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["witchesMakePotion"]
     },
 // Act 4
 witchesMakePotion: {  // Needed?
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+        description: ["Thunder. Enter the three witches", "The witches are singing and making a potion of many disgusting things"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethWantsInfo"]
     },
 macbethWantsInfo: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+        description: ["Enter Macbeth", "Macbeth demands information from the three witches", "They call upon their 'masters' for Macbeth to speak to", "Macbeth drinks their nasty potion"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
 apparitionOne: {
         description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
 apparitionTwo: {
         description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
 apparitionThree: {
         description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
 ghostBanquoKings: {  // Needed?
         description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
 lennoxFoundMacbeth: {
         description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
 // Scene 4.2
@@ -445,20 +449,20 @@ ladyDuffWonders: {  // Needed?
     },
 sonMacduffWonders: {
         description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
 macduffFamilyMurdered: { // Missing the scene that macbeth decides to do this
         description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
 macduffFamilySad: {
         description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
 // Scene 4.3
@@ -499,8 +503,8 @@ macduffFamilySad: {
     //******************** Todo Scene ********************//
     todo: {
         description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
 }
