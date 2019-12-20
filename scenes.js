@@ -277,61 +277,93 @@ banquoFleanceOnWatch: {	// Needed?
         links: ["macbethPlansBanquoMurder", "macbethGreetsBanquo"]
     },
     macbethPlansBanquoMurder: {
-        description: ["Exit Attendant", "Macbeth rants about Banquo's prophesied future Kings and how they threaten his position as King", "He calls murderers to speak with"],
+        description: ["Exit Attendant", "Macbeth rants in his room about Banquo's prophesied future Kings and how they threaten his position as King", "He calls murderers to speak with"],
         question: "Continue",
         options: ["Continue"],
         links: ["macbethSpeaksToMurderers"]
     },
     macbethSpeaksToMurderers: {
-        description: ["Macbeth convinces the murderers that it is in their best interest to murder both Banquo and his son, Fleance", "Macbeth specifies that the murders must take place away from the caste to remove suspicion from macbeth"],
-        question: "todo",
-        options: ["todo"],
+        description: ["Macbeth convinces the murderers that it is in their best interest to murder both Banquo and his son, Fleance", "Macbeth specifies that the murders must take place away from his castle", "Murderers agree"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["kingInformsQueen"]
+    },
+    kingInformsQueen: {
+        description: ["Macbeth shares his plans for Banquo with Lady Macbeth", "Lady Macbeth warns Macbeth that he must look jovial during dinner"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["murderersInThePark"]
+    },
+    murderersInThePark: {
+        description: ["A Park Near The Palace. Enter three Murderers."],
+        question: "What will the murderers do?",
+        options: ["Kill Banquo and Fleance", "Kill Banquo", "Kill none"],
+        links: ["murderersKillBoth", "murderersKillBanquo", "murderersDontKill"]
+    },
+    murderersKillBoth: {
+        description: ["Stealthily, the three murderers kill both Banquo and Fleance in the night"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethHearsOfBoth"]
+    },
+    macbethHearsOfBoth: {
+        description: ["The murderers return to the castle in time for dinner", "They inform King Macbeth that they successfully killed both Banquo and Fleance"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethSeesBoth"]
+    },
+    macbethSeesBoth: {
+        description: ["During the dinner, Macbeth sees the 'ghosts' of Banquo and Fleance", "Banquo is holding fleance in his arms, crying"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["dinnerSad"]
+    },
+    dinnerSad: {
+        description: ["Macbeth holds himself under control for as long as he can, but he starts crying too", "The dinner is cut short, as Macbeth cannot stop crying"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
-    kingMacbethInformsLadyMacbeth: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+    
+    murderersKillBanquo: {
+        description: ["Stealthily, the three murderers kill both Banquo in the night, but they cannot bear to kill an innocent child", "Fleance escapes into the night"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethHearsOfBanquo"]
+    },
+    macbethHearsOfBanquo: {
+        description: ["The murderers return to the castle in time for dinner", "They inform King Macbeth that they successfully killed both Banquo, but Fleance escaped"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethSeesBanquo"]
+    },
+    macbethSeesBanquo: {
+        description: ["Macbeth sees the 'ghost' of Banquo sit in his own chair at the dinner table"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethFitBanquo"]
+    },
+    macbethFitBanquo: {
+        description: ["Macbeth freaks out, while Lady Macbeth tries to control him, to no avail", "She tries to pass it off as sickness, but Macbeth cannot get himself together"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["dinnerRuined"]
+    },
+    dinnerRuined: {
+        description: ["The dinner party is ruined, and the guests go home, concerned about their new King"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
-banquoMurdered: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+    
+    murderersDontKill: {
+        description: ["The three murderers decide that they cannot kill Banquo or Fleance"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethHearsOfNone"]
     },
-murderersDontKill: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-murderersKillBanquo: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-murderersKillBoth: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-macbethHearsOfNone: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-macbethHearsOfBanquo: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-macbethHearsOfBoth: {
-        description: ["todo: todo"],
+    macbethHearsOfNone: {
+        description: ["The murderers return to the castle in time for dinner", "They inform King Macbeth that they did not kill Banquo or Fleance", "Macbeth is upset"],
         question: "todo",
         options: ["todo"],
         links: ["todo"]
@@ -342,40 +374,10 @@ macbethHearsOfBoth: {
         options: ["Continue"],
         links: ["pleasantDinner"]
     },
-macbethSeesBanquo: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-macbethSeesBoth: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
     pleasantDinner: {
         description: ["Everyone has a seat at King Macbeth's table", "Banquo, Macbeth's dear friend, has a seat right next to Macbeth", "Everyone is jolly and enjoys the dinner"],
         question: "Continue",
         options: ["Continue"],
-        links: ["todo"]
-    },
-macbethFitBanquo: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-macbethFitBoth: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-dinnerBroken: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
         links: ["todo"]
     },
 // Scene 3.5
