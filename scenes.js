@@ -117,11 +117,300 @@ var scenes = {
     },
     //******* Scene 1.5 *******//
     ladyMacbethLetter: {
-        description: ["Enter Lady Macbeth, reading a letter", "Lady macbeth: 'They met me in the day of success, and I have learned by the perfectest report, they have more in them than mortal knowledge. When I burned in desire to question them further, they made themselves air, into which they vanished. Whiles I stood rapt in the wonder of it, came missives from the king, who all-hailed me 'Thane of Cawdor;' by which title, before, these weird sisters saluted me, and referred me to the coming on of time, with 'Hail, king that shalt be!' This have I thought good to deliver thee, my dearest partner of greatness, that thou mightst not lose the dues of rejoicing, by being ignorant of what greatness is promised thee. Lay it to thy heart, and farewell.'", "Lady Macbeth: Glamis thou art, and Cawdor; and shalt be what thou art promised. yet do I fear thy nature; it is too full o' the milk of human kindness to catch the nearest way. Thou wouldst be great; art not without ambition, but without the illness should attend it. What thou wouldst highly, that wouldst thou holily; wouldst not play false, and yet wouldst wrongly win. thou'ldst have, great Glamis, that which cries 'Thus thou must do, if thou have it; and that which rather thou dost fear to do than wishest should be undone.' Hie thee hither, that I may pour my spirits in thine ear; and chastise with the valour of my tongue all that impedes thee from the golden round, which fate and metaphysical aid doth seem to have thee crown'd withal.", "Enter a messenger", "Lady Macbeth: What is your tidings?"],
+        description: ["Enter Lady Macbeth, reading a letter", "Lady macbeth: 'They met me in the day of success, and I have learned by the perfectest report, they have more in them than mortal knowledge. When I burned in desire to question them further, they made themselves air, into which they vanished. Whiles I stood rapt in the wonder of it, came missives from the king, who all-hailed me 'Thane of Cawdor;' by which title, before, these weird sisters saluted me, and referred me to the coming on of time, with 'Hail, king that shalt be!' This have I thought good to deliver thee, my dearest partner of greatness, that thou mightst not lose the dues of rejoicing, by being ignorant of what greatness is promised thee. Lay it to thy heart, and farewell.'", "Lady Macbeth: Glamis thou art, and Cawdor; and shalt be what thou art promised. yet do I fear thy nature; it is too full o' the milk of human kindness to catch the nearest way. Thou wouldst be great; art not without ambition, but without the illness should attend it. What thou wouldst highly, that wouldst thou holily; wouldst not play false, and yet wouldst wrongly win. Thou'ldst have, great Glamis, that which cries 'Thus thou must do, if thou have it; and that which rather thou dost fear to do than wishest should be undone.' Hie thee hither, that I may pour my spirits in thine ear; and chastise with the valour of my tongue all that impedes thee from the golden round, which fate and metaphysical aid doth seem to have thee crown'd withal.", "Enter a messenger", "Lady Macbeth: What is your tidings?", "Messenger: The king comes here to-night", "Lady Macbeth: Thou'rt mad to say it. Is not thy master with him? who, were't so, would have inform'd for preparation.", "Messenger: So please you, it is true: our thane is coming. One of my fellows had the speed of him who, almost dead for breath, had scarcely more, than would make up his message.", "Lady Macbeth: Give him tending, he brings great news.", "Exit Messenger", "Lady Macbeth: todo"],
         question: "todo",
         options: ["todo"],
         links: ["todo"]
     },
+macbethAndLadyPlanMurder: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+DuncanEntersMacbethCastle: {	// Needed?
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethAfraidOfMurder: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+// Act 2
+banquoFleanceOnWatch: {	// Needed?
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethKillsDuncan: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+ladyMacPutsDaggersBack: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+ladyMacBraverThanMacbeth: {	// Needed?
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+porterRant: {	// Needed?
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+awakeDuncan: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+menMakeAMeeting: {
+        description: ["todo: todo"],
+        question: "What will Malcolm and Donalbain do?",
+        options: ["Stay", "Flee"],
+        links: ["malcolmDonalbainStay", "malcolmDonalbainFlee"]
+    },
+malcolmDonalbainLeave: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+malcolmDonalbainStay: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+rossAndOldMan: {  // Needed?
+        description: ["todo: todo"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["introMacduff"]
+    },
+introMacduff: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+// Act 3
+banquoWonders: {
+        description: ["Enter Banquo", "todo: todo"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["kingMacbethPlansDinner"]
+    },
+kingMacbethPlansDinner: {
+        description: ["Sennet sounded. Enter Macbeth, as king, Lady Macbeth, as queen, Lennox, Ross, Lords, Ladies, and Attendants", "todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethPlansBanquoMurder: {
+        description: ["Exit Attendant", "todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethSpeaksToMurderers: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+kingMacbethInformsLadyMacbeth: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+banquoMurdered: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+murderersDontKill: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+murderersKillBanquo: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+murderersKillBoth: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethHearsOfNone: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethHearsOfBanquo: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethHearsOfBoth: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethGreetsBanquo: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethSeesBanquo: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethSeesBoth: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+pleasantDinner: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+dinnerEnded: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethFitBanquo: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethFitBoth: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+dinnerBroken: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+// Scene 3.5
+introHecate: {  // Needed?
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macduffUpdate: {  // Needed?
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+// Act 4
+witchesMakePotion: {  // Needed?
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macbethWantsInfo: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+apparitionOne: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+apparitionTwo: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+apparitionThree: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+ghostBanquoKings: {  // Needed?
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+lennoxFoundMacbeth: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+// Scene 4.2
+ladyDuffWonders: {  // Needed?
+        description: ["todo: todo"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["sonMacduffWonders"]
+    },
+sonMacduffWonders: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macduffFamilyMurdered: { // Missing the scene that macbeth decides to do this
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+macduffFamilySad: {
+        description: ["todo: todo"],
+        question: "todo",
+        options: ["todo"],
+        links: ["todo"]
+    },
+// Scene 4.3
+
 
 
     // 0-1-2-4-5-6-8-9-11-12-13-15-16-17-18
