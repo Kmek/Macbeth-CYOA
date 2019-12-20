@@ -274,21 +274,21 @@ banquoFleanceOnWatch: {	// Needed?
         description: ["Sennet sounded. Enter Macbeth, as king, Lady Macbeth, as queen, Lennox, Ross, Lords, Ladies, and Attendants", "King Macbeth socializes and plans a dinner party", "Before dinner, Banquo plans to ride his horse", "Macbeth wants all the details of Banquo's trip before he leaves"],
         question: "What will Macbeth do?",
         options: ["Plan another murder", "Have a nice (but awkward) dinner party"],
-        links: ["macbethPlansBanquoMurder", "todo"]
+        links: ["macbethPlansBanquoMurder", "macbethGreetsBanquo"]
     },
     macbethPlansBanquoMurder: {
-        description: ["Exit Attendant", "todo: todo"],
+        description: ["Exit Attendant", "Macbeth rants about Banquo's prophesied future Kings and how they threaten his position as King", "He calls murderers to speak with"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["macbethSpeaksToMurderers"]
+    },
+    macbethSpeaksToMurderers: {
+        description: ["Macbeth convinces the murderers that it is in their best interest to murder both Banquo and his son, Fleance", "Macbeth specifies that the murders must take place away from the caste to remove suspicion from macbeth"],
         question: "todo",
         options: ["todo"],
         links: ["todo"]
     },
-macbethSpeaksToMurderers: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-kingMacbethInformsLadyMacbeth: {
+    kingMacbethInformsLadyMacbeth: {
         description: ["todo: todo"],
         question: "todo",
         options: ["todo"],
@@ -336,11 +336,11 @@ macbethHearsOfBoth: {
         options: ["todo"],
         links: ["todo"]
     },
-macbethGreetsBanquo: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
+    macbethGreetsBanquo: {
+        description: ["The dinner begins and guests start arriving", "Macbeth greets Banquo in full health"],
+        question: "Continue",
+        options: ["Continue"],
+        links: ["pleasantDinner"]
     },
 macbethSeesBanquo: {
         description: ["todo: todo"],
@@ -354,16 +354,10 @@ macbethSeesBoth: {
         options: ["todo"],
         links: ["todo"]
     },
-pleasantDinner: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
-        links: ["todo"]
-    },
-dinnerEnded: {
-        description: ["todo: todo"],
-        question: "todo",
-        options: ["todo"],
+    pleasantDinner: {
+        description: ["Everyone has a seat at King Macbeth's table", "Banquo, Macbeth's dear friend, has a seat right next to Macbeth", "Everyone is jolly and enjoys the dinner"],
+        question: "Continue",
+        options: ["Continue"],
         links: ["todo"]
     },
 macbethFitBanquo: {
